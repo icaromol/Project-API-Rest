@@ -1,4 +1,4 @@
-# API REST Completa 🚀
+# API REST com express
 
 Este projeto consiste na criação de uma API REST utilizando Node.js, Express e TypeScript. Foi realizado para fins de prática e estudo.
 
