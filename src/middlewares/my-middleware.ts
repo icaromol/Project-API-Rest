@@ -6,7 +6,9 @@ export function myMiddleware(
   next: NextFunction
 ) {
   request.user_id = "123456";
-  console.log("Middleware funcionando!");
+  console.log(
+    "Middleware global adicionado em company-routes.ts e funcionando!"
+  );
 
   return next();
 }
