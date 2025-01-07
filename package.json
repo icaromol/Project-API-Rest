@@ -4,7 +4,7 @@
   "description": "Projeto de criação de API Rest para fins de prática e estudo.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsx watch src/server.ts"
   },
   "keywords": [
     "APIRest"
@@ -13,6 +13,7 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.14.12",
+    "tsx": "^4.16.2",
     "typescript": "^5.5.4"
   }
 }
