@@ -1,0 +1,18 @@
+{
+  "name": "api-rest",
+  "version": "1.0.0",
+  "description": "Projeto de criação de API Rest para fins de prática e estudo.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "APIRest"
+  ],
+  "author": "Ícaro Molinari",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.14.12",
+    "typescript": "^5.5.4"
+  }
+}
