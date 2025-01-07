@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { AppError } from "../utils/AppError";
+import { AppError } from "../utils/appError";
 
 export class CompanyController {
   index(request: Request, response: Response) {
@@ -13,14 +13,13 @@ export class CompanyController {
     const { briefing, tone_and_voice } = request.body;
     const { id } = request.params;
 
-    /**
-    ERROS DE TESTE
-    throw new Error(
-      "Erro de teste dentro de companyController.ts para fins de prática."
-    );
+    // TRATAMENTO DE REQUISIÇÕES COM ERRO:
 
-    throw new AppError("Erro de teste do app.");
-    */
+    if (!briefing) {
+      throw new AppError("Briefing é obrigatório", 400);
+    } else if (!tone_and_voice) {
+      throw new AppError("Tom de voz de marca é obrigatório", 400);
+    }
 
     response
       .status(201)
